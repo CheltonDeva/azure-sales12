@@ -9,7 +9,7 @@ STORAGE_ACCOUNT_NAME = "dailysalesstorage947"
 STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=..."  # from Access keys in Storage
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('fusionfunc81 function triggered.')
+    logging.info('FusionPractices12 function triggered.')
 
     try:
         # Parse JSON body from ADF
@@ -45,3 +45,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as e:
         logging.error(f"Validation error: {str(e)}")
         return func.HttpResponse(f"Invalid Data: {str(e)}", status_code=500)
+
